@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Blue Leopard: Contact Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet" />
+    <script defer src="javascript/contact.js"></script>
+</head>
+<body class="contact-page">
+
+    <div class="container">
+        <header>
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="Logo" /></a>
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cool_menu.html">Cool Menu</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="landing">
+            <h1>Contact Us</h1>
+            <p>
+                Fill this form to contact us. We will respond as soon as possible
+            </p>
+        </div>
+          
+        <form action="/" method="GET" id="form">
+            <div class="landing">
+                <p>Your Name:</p>
+                <input id="userName" type="text" name="userName" placeholder="Enter your name here"/>
+                <p>Your E-mail:</p>
+                <input id="email" type="text" name="email" placeholder="Enter your e-mail here"/>
+                <!--type="email"-->
+                <p> Your message:</p>
+                <textarea rows="5" , cols="20" placeholder="Please enter your message here."></textarea>
+                
+                <p> Please accept our terms and conditions:</p>
+                <p></p>
+                <label for="terms">Terms and conditions</label>
+                <input id="terms" type="checkbox" name="Terms" required/>
+                
+                <button id="submit" type="submit" class="button">Submit</button>
+                <div id="error"></div> 
+            </div>
+        </form>
+
+        <footer>
+            <h4>Geo Localization</h4>
+            <p>Latitude &mdash; 49.657719</p>
+            <p>Longitude &mdash; 21.157789</p>
+        </footer>
+    </div>
+
+</body>
+</html>
